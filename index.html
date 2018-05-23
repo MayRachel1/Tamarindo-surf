@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>style guide</title>
+</head>
+<body class="pb-60">
+    <header class="Padding-top">
+        <div class="container">
+            <div class="cont_logo">
+                <div class="logo">
+                    <a href="index.html" class="link_logo"><img src="img/Logo-blanco-blue.png" alt="Our logo" class="logo_img"></a>
+                </div>
+                <div class="title">
+                    <h1 class="title pl-30">
+                        - Styleguide 
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 content-space">
+                    <h1>COLOR PALETTE</h1>
+                    <p class="paragraph_pallete">
+                        These are the most important colors and will be used all throughout the site. 
+                        Regular colors are the standard colors on the site while hover colors are the hover state
+                        for the regular colors. Overlay colors areusually used with opacity on top of images.
+                    </p>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="boxes">
+                                <span>Regular Colors</span>
+                                <div class="box primary-bg-color"></div>
+                                <span>Hex: #00bdc4</span>
+                                <input type="text" id="primary-color" value='class="primary-color"' onfocus="copyCode(this.id)" class="none-style primary-color text">
+                                <input type="text" id="bg-primary-color" value='class="primary-bg-color"' onfocus="copyCode(this.id)" class="none-style primary-bg-color text">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="boxes">
+                                <span>Hover Colors</span>
+                                <div class="box hover-bg-color"></div>
+                                <span>Hex: #00a3a9</span>
+                                <input type="text" id="hover-color" value='class="hover-color"' onfocus="copyCode(this.id)" class="none-style hover-color text">
+                                <input type="text" id="bg-hover-color" value='class="primary-bg-color"' onfocus="copyCode(this.id)" class="none-style hover-bg-color text">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="boxes">
+                                <span>Ovelay Colors</span>
+                                <div class="box primary-bg-color"></div>
+                                <span>Hex: #00bdc4</span>
+                            </div>
+                            <input type="text" id="color-overlay" value='class="primary-color"' onfocus="copyCode(this.id)" class="none-style primary-color text">
+                            <input type="text" id="bg-color-overlay" value='class="primary-bg-color"' onfocus="copyCode(this.id)" class="none-style primary-bg-color text">
+                        </div>
+                    </div>
+                    <h1>Buttons</h1>
+                    <h3>Sizes</h4>
+                    <p>Add 'button-small' or 'button-large' for sizes. A button is normal by default.</p>
+                    <h3>Circle Buttons</h3>
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-4">
+                            <span class="pb-10">Small Button</span>
+                            <button class="primary-button circle-button small-button mt-10 mb-10">Book Now &raquo;</button>
+                            <input type="text" id="small-button" value='class="primary-button circle-button small-button"' onfocus="copyCode(this.id)" class="none-style">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4">
+                            <span>Normal Button</span>
+                            <button class="primary-button circle-button  mt-10 mb-10">Book Now &raquo;</button>
+                            <input type="text" id="regular-button" value='class="primary-button circle-button"' onfocus="copyCode(this.id)" class="none-style">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4">
+                            <span>Big Button</span>
+                            <button class="primary-button circle-button large-button  mt-10 mb-10">Book  &raquo;</button>
+                            <input type="text" id="large-button" value='class="primary-button circle-button large-button"' onfocus="copyCode(this.id)" class="none-style">
+                        </div>
+                    </div>
+                    <h3>Square Buttons</h3>
+                    <div class="row">
+                       <div class="col-6 col-md-4 col-lg-4">
+                            <span>Small Button</span>
+                            <button class="primary-button small-button  mt-10 mb-10">Book Now &raquo;</button>
+                            <input type="text" id="small-button-square" value='class="primary-button small-button"' onfocus="copyCode(this.id)" class="none-style">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4">
+                            <span>Normal Button</span>
+                            <button class="primary-button  mt-10 mb-10">Book Now &raquo;</button>
+                            <input type="text" id="regular-button-square" value='class="primary-button"' onfocus="copyCode(this.id)" class="none-style">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4">
+                            <span>Big Button</span>
+                            <button class="primary-button large-button  mt-10 mb-10">Book  &raquo;</button>
+                            <input type="text" id="large-button-square" value='class="primary-button large-button"' onfocus="copyCode(this.id)" class="none-style">
+                        </div>
+                    </div>
+                    <h3>Full width button(add 'full-width' to any button)</h3>
+                    <div class="row"> 
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <button class="primary-button circle-button full-width  mt-10 mb-10">Book Now &raquo;</button>
+                            <input type="text" id="full-width-button" value='class="primary-button circle-button full-width"' onfocus="copyCode(this.id)" class="full-width none-style">
+                        </div>
+                    </div>
+                    <h2>Solid Color or Images Backgrounds</h2>
+                    <div class="row">
+                        <div class="bg-buttons primary-bg-color separator">
+                            <p>add the class 'white-text' to a container to change all the font color to white.</p>
+                            <h3>Secondary Buttons</h3>
+                            <div class="row">
+                                <div class="col-6 col-md-4 col-lg-4">
+                                    <span class="pb-10">Small Button</span>
+                                    <button class="secondary-button circle-button small-button mt-10 mb-10">Book Now &raquo;</button>
+                                    <input type="text" id="secondary-button" value='class="secondary-button circle-button small-button"' onfocus="copyCode(this.id)" class="none-style">
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-4">
+                                    <span>Normal Button</span>
+                                    <button class="secondary-button circle-button  mt-10 mb-10">Book Now &raquo;</button>
+                                    <input type="text" id="secondary-rglr-button" value='class="secondary-button circle-button"' onfocus="copyCode(this.id)" class="none-style">
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-4">
+                                    <span>Big Button</span>
+                                    <button class="secondary-button circle-button large-button  mt-10 mb-10">Book  &raquo;</button>
+                                    <input type="text" id="secondary-large-button" value='class="secondary-button circle-button large-button"' onfocus="copyCode(this.id)" class="none-style">
+                                </div>
+                            </div>
+                            <h3>Transparent Square Buttons</h3>
+                            <div class="row">
+                               <div class="col-6 col-md-4 col-lg-4">
+                                    <span>Small Button</span>
+                                    <button class="square-button small-button  mt-10 mb-10">Book Now &raquo;</button>
+                                    <input type="text" id="square-button" value='class="square-button small-button"' onfocus="copyCode(this.id)" class="none-style">
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-4">
+                                    <span>Normal Button</span>
+                                    <button class="square-button  mt-10 mb-10">Book Now &raquo;</button>
+                                    <input type="text" id="square-regular-button" value='class="square-button"' onfocus="copyCode(this.id)" class="none-style">
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-4">
+                                    <span>Big Button</span>
+                                    <button class="square-button large-button  mt-10 mb-10">Book  &raquo;</button>
+                                    <input type="text" id="square-large-button" value='class="square-button large-button"' onfocus="copyCode(this.id)" class="none-style">
+                                </div>
+                            </div>
+                            <h3>Full Width Transparent</h3>
+                            <div class="row"> 
+                                <div class="col-12 col-md-12 col-lg-12">
+                                    <button class="square-button  full-width  mt-10 mb-10">Book a Tour Here &raquo;</button>
+                                    <input type="text" id="big-width-button" value='class="square-button circle-button full-width"' onfocus="copyCode(this.id)" class="full-width none-style">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 content-space">
+                    <div class="cont-directions">
+                        <h1>BASIC TYPOGRAPHY</h1>
+                        <P class="m-0"><span>HEADINGS:</span> ROBOTO LIGHT</P>
+                        <P class="m-0"><span>Body:</span> Open Sans</P>
+                        <P><span>Font Color:</span> #686868</P>
+                        <p>Most of your site it made of text, so typography is very important!
+                        </p>
+                        <h1>H1 (46 at 1200)</h1>
+                        <h2>h2 (30 at 1200px browser</h2>
+                        <h3>H3 (20 at 1200px browser)</h3>
+                        <h4>H4 (16 at 1200px browser)</h4>
+                        <h5>H3 (14 at 1200px browser)</h5>
+                        <h6>H3 (12 at 1200px browser)</h6>
+                        <h2>This is important (READ THIS)</h2>
+                        <p>In order to get our spacing right, you will need to wrap you on-page content in a containing element with the class 
+                        <span>content-space</span> This will remove the spacing from the first child element (heading or paragraph) and set the spacing to match our theme's design</p>
+                        <h4>A little more about content-space</h4>
+                        <p>Each heading element will have 30 pixels of space (margin-top) <span>unless</span> it is the child of an element with the class 'content-space'. Also important: 
+                        this does not work if 'content-space' isn't the inmediate parent.</p>
+                        <h4>These are all items in an unordered list</h4>
+                        <p>Add the class <span>'icon-ul'</span> to the 'ul' element.</p>
+                        <ul class="icon-ul">
+                            <li>This is a list item.</li>
+                            <li>This is also a list item.</li>
+                            <li>Here's one more</li>
+                            <li>And just for good measure...</li>
+                            <li>Here's one last one.</li>
+                        </ul>
+                        <input type="text" id="class-ul" value='class="icon-ul"' onfocus="copyCode(this.id)" class="none-style full-width">
+                        <h4>Theme Links</h4>
+                        <a href="#" class="primary-link">READ MORE &raquo;</a>
+                        <input type="text" id="primary-link" value='class="primary-link"' onfocus="copyCode(this.id)" class="none-style full-width">
+                        <h2>Helper Classes</h2>
+                        <h4>Margin and Padding</h4>
+                        <p>While the basic theme should have the right sized spaces and it will better to follow them as a general rule. If you do however find yourself in a position
+                            where you need to set the space here's a few classes to help you (better thab adding 'br')
+                        </p>
+                        <p>While for instance, it is better to add a class 'content-space' to the container of the content to get rid of the margin of the first element, an alternative is to add <span>class='mt-0'.</span></p>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-4 col-lg-2">
+                                <p>.mt-0</p>
+                            </div>
+                            <div class="col-xs-6 col-md-4 col-lg-2">
+                                <p>.mt-10</p>
+                            </div>
+                            <div class="col-xs-6 col-md-4 col-lg-2">
+                                <p>.mt-20</p>
+                            </div>
+                            <div class="col-xs-6 col-md-4 col-lg-2">
+                                <p>.mt-30</p>
+                            </div>
+                            <div class="col-xs-6 col-md-4 col-lg-2">
+                                <p>.mt-60</p>
+                            </div>
+                            <div class="col-xs-6 col-md-4 col-lg-2">
+                                <p>.mt-90</p>
+                            </div>
+                            <p class="pl-15">At times you will want to get rid of the margin on the bottom of an element within a closed container. You can use <span>class='mb-0'</span></p>
+                            <h4 class="pl-15">Style</h4>
+                            <div class="col-xs-12 col-md-4">
+                                <p class="text-left primary-bg-color">.text-left</p>
+                                <b>bold options</b>
+                                <p class="m-0 mt-10">.text-bold</p>
+                                <p class="m-0">&#60;strong&#62;</p>
+                                <p class="m-0">&#60b&#62;</p>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <p class="text-center primary-bg-color">.text-center</p>
+                                <i>italic options</i>
+                                <p class="m-0 mt-10">.text-italic</p>
+                                <p class="m-0">&#60em&#62;</p>
+                                <p class="m-0">&#60i&#62;</p>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <p class="text-right primary-bg-color">.text-right</p>
+                                <u>underline options</u>
+                                <p class="m-0 mt-10">.text-underline</p>
+                                <p class="m-0">&#60u&#62;</p>
+                            </div>
+                        </div>
+                        <h4>Section Padding</h4>
+                        <p>Depending on the section, you can add one of these classes for space (adds space above and below)</p>
+                        <p>(30px top and bottom): <span>.section-padding-small</span></p>
+                        <p>(60px top and bottom): <span>.section-padding-medium</span></p>
+                        <p>(120px top and bottom): <span>.section-padding-large</span></p>
+                        <h4>Bootstrap</h4>
+                        <P>This theme is built with <span>BOOTSTRAP 3.</span> For more helper classes available in this theme you can visit the <a href="#">docs here.</a></P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="grids">
+            <div class="container">
+                <h1>Page Elements</h1>
+                <h2>
+                    Square Responsive Img Grid
+                </h2>
+                <p>desktop 5, tablet-wide 3,2, tablet-narrow: 2,2,1, phone: 1x5</p>
+                <div class="flex-row">
+                    <div class="cell-x5 hover-effect">
+                        <a href="" style="background-image: url(img/img-surf.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x5 hover-effect">
+                        <a href="" style="background-image: url(img/img-surf.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x5 hover-effect">
+                        <a href="" style="background-image: url(img/img-surf.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x5 hover-effect">
+                       <a href="" style="background-image: url(img/img-surf.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x5 hover-effect">
+                        <a href="" style="background-image: url(img/img-surf.jpg);" class="cover-img"></a>
+                    </div>
+                </div>
+                <input type="text" id="cell" value='class="cell-x5 hover-effect"' onfocus="copyCode(this.id)" class="none-style text full-width">
+                <div class="flex-row mt-20">
+                    <div class="cell-x6  hover-effect">
+                        <a href="" style="background-image: url(img/img-surf-1.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x6  hover-effect">
+                        <a href="" style="background-image: url(img/img-surf-1.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x6  hover-effect">
+                        <a href="" style="background-image: url(img/img-surf-1.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x6  hover-effect">
+                       <a href="" style="background-image: url(img/img-surf-1.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x6  hover-effect">
+                        <a href="" style="background-image: url(img/img-surf-1.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x6  hover-effect">
+                        <a href="" style="background-image: url(img/img-surf-1.jpg);" class="cover-img"></a>
+                    </div>
+                </div>
+                <input type="text" id="cell-x6" value='class="cell-x6 hover-effect"' onfocus="copyCode(this.id)" class="none-style text full-width">
+                <div class="flex-row mt-20">
+                    <div class="cell-x4  hover-effect">
+                        <a href="" style="background-image: url(img/img-surf-2.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x4  hover-effect">
+                        <a href="" style="background-image: url(img/img-surf-2.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x4  hover-effect">
+                        <a href="" style="background-image: url(img/img-surf-2.jpg);" class="cover-img"></a>
+                    </div>
+                    <div class="cell-x4  hover-effect">
+                       <a href="" style="background-image: url(img/img-surf-2.jpg);" class="cover-img"></a>
+                    </div>
+                </div>
+                <input type="text" id="cell-x4" value='class="cell-x4 hover-effect"' onfocus="copyCode(this.id)" class="none-style text full-width">
+                <div class="row is-flex mt-40">
+                    <div class="col-xs-12 col-sm-3 col-md-20 col-lg-20">
+                        <div class="box-content p-20">
+                            <div class="hover-effect">
+                                <div style="background-image: url(img/img-surf-3.jpg);" class="cover-img"></div>
+                            </div>
+                            <p class="mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quas voluptate aspernatur a saepe ipsum modi corporis dicta odio neque temporibus quidem cum voluptatibus enim, iste, at nesciunt possimus soluta.</p>
+                            <button class="primary-button btn-bottom">Book Now &raquo;</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-4 col-lg-20">
+                        <div class="box-content p-20">
+                            <div class="hover-effect">
+                                <div style="background-image: url(img/img-surf-3.jpg);" class="cover-img"></div>
+                            </div>
+                            <p class="mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <button class="primary-button btn-bottom">Book Now &raquo;</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-4 col-lg-20">
+                        <div class="box-content p-20">
+                            <div class="hover-effect">
+                                <div style="background-image: url(img/img-surf-3.jpg);" class="cover-img"></div>
+                            </div>
+                            <p class="mt-10">Loratum dolores iste quod. Perferendis repellendus maxime, distinctio vero aperiam alias amet aliquid ullam ipsum architecto voluptatem ad cum.</p>
+                            <button class="primary-button btn-bottom">Book Now &raquo;</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-4 col-lg-20">
+                        <div class="box-content p-20">
+                            <div class="hover-effect">
+                                <div style="background-image: url(img/img-surf-3.jpg);" class="cover-img"></div>
+                            </div>
+                            <p class="mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dus maxime,chitecto voluptatem ad cum.</p>
+                            <button class="primary-button btn-bottom">Book Now &raquo;</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-4 col-lg-20">
+                        <div class="box-content p-20">
+                            <div class="hover-effect">
+                                <div style="background-image: url(img/img-surf-3.jpg);" class="cover-img"></div>
+                            </div>
+                            <button class="primary-button btn-bottom">Book Now &raquo;</button>
+                        </div>
+                    </div>
+                </div>
+                <h4>You should use the class <b>row is-flex</b> to get the styles to the columns</h4>
+                <input type="text" id="is-flex" value='class="row is-flex"' onfocus="copyCode(this.id)" class="none-style text full-width">
+                <h4>To use the cols to get columns bootstrap grid <code>col-lg-20</code></h4>
+                <input type="text" id="col-lg-20" value='class="col-xs-12 col-sm-3 col-md-4 col-lg-20"' onfocus="copyCode(this.id)" class="none-style text full-width">
+                <h4>Style to get the columns the same sizes</h4>
+                <input type="text" id="box-content" value='class="box-content"' onfocus="copyCode(this.id)" class="none-style text full-width">                    
+                <div class="row mt-40">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="box-cont hover-effect">
+                            <div style="background-image: url(img/img-surf-4.jpg);" class="cover-img"></div>
+                        </div>
+                        <input type="text" id="img-hover-effect" value='class="hover-effect"' onfocus="copyCode(this.id)" class="none-style text full-width">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="box-cont relative">
+                            <div style="background-image: url(img/img-surf-4.jpg);" class="cover-img"></div>
+                            <div class="cover-img overlay"></div>
+                        </div>
+                        <input type="text" id="overlay" value='class="overlay"' onfocus="copyCode(this.id)" class="none-style text full-width">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="box-cont">
+                            <div class="hover-effect">
+                                <div class="hover-info-container dark-color content-space">
+                                    <h3>Hover Information Container</h3>
+                                    <button class="square-button">Book &raquo;</button>
+                                </div>
+                                <div style="background-image: url(img/img-surf-4.jpg);" class="cover-img"></div>
+                            </div>
+                        </div>
+                        <input type="text" id="dark-bg-text" value='class="hover-info-container dark-bg-text"' onfocus="copyCode(this.id)" class="none-style text full-width">
+                        <input type="text" id="hover-content-space" value='class="hover-info-container content-space"' onfocus="copyCode(this.id)" class="none-style text full-width">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome-all.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
